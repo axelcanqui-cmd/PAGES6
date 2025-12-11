@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Finaliza tu compra en WAIT SHOP - Completa tus datos y recibe tus productos de forma rápida y segura.">
+<title>Finalizar Compra - WAIT SHOP</title>
+<link rel="stylesheet" href="cs/checkout.css">
+<script src="js/checkout.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="contenido-header">
+        <div class="logo">WAIT SHOP</div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Productos</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="contenedor">
+    <h1 class="titulo">Finalizar Compra</h1>
+
+    <div class="contenido">
+        
+        <!-- FORMULARIO -->
+        <div class="formulario">
+            <form id="formulario-compra">
+                
+                <div class="seccion">
+                    <h3>Datos Personales</h3>
+                    <div class="dos-campos">
+                        <div class="campo">
+                            <label>Nombre:</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+                        <div class="campo">
+                            <label>Apellido:</label>
+                            <input type="text" id="apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="dos-campos">
+                        <div class="campo">
+                            <label>Email:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="campo">
+                            <label>Teléfono:</label>
+                            <input type="tel" id="telefono" required>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label>CI (Carnet de Identidad):</label>
+                        <input type="text" id="ci" required>
+                    </div>
+                </div>
+
+                <div class="seccion">
+                    <h3>Dirección de Envío</h3>
+
+                    <div class="campo">
+                        <label>Dirección completa:</label>
+                        <input type="text" id="direccion" required>
+                    </div>
+
+                    <div class="dos-campos">
+                        <div class="campo">
+                            <label>Ciudad:</label>
+                            <input type="text" id="ciudad" required>
+                        </div>
+                        <div class="campo">
+                            <label>Departamento:</label>
+                            <select id="departamento" required>
+                                <option value="">Seleccione...</option>
+                                <option value="La Paz">La Paz</option>
+                                <option value="Cochabamba">Cochabamba</option>
+                                <option value="Santa Cruz">Santa Cruz</option>
+                                <option value="Oruro">Oruro</option>
+                                <option value="Potosí">Potosí</option>
+                                <option value="Chuquisaca">Chuquisaca</option>
+                                <option value="Tarija">Tarija</option>
+                                <option value="Beni">Beni</option>
+                                <option value="Pando">Pando</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label>Notas adicionales (opcional):</label>
+                        <textarea id="notas" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="seccion">
+                    <h3>Método de Pago</h3>
+                    <label class="metodo-pago"><input type="radio" name="pago" value="tarjeta" checked> Tarjeta</label>
+                    <label class="metodo-pago"><input type="radio" name="pago" value="transferencia"> Transferencia</label>
+                    <label class="metodo-pago"><input type="radio" name="pago" value="efectivo"> Pago contra entrega</label>
+                </div>
+
+                <button class="boton-comprar" type="submit">Confirmar Compra</button>
+            </form>
+        </div>
+
+        <!-- RESUMEN -->
+        <div class="resumen">
+            <h3>Resumen del Pedido</h3>
+            <div id="lista-productos"></div>
+
+            <div class="totales">
+                <div class="linea-total">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">0 BOB</span>
+                </div>
+                <div class="linea-total">
+                    <span>Envío:</span>
+                    <span>Gratis</span>
+                </div>
+                <div class="linea-total final">
+                    <span>Total:</span>
+                    <span id="total">0 BOB</span>
+                </div>
+            </div>
+
+            <a href="carrito.html" class="boton-volver">Volver al carrito</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>WAIT SHOP © 2025 - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

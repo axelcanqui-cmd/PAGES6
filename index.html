@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAIT SHOP | Productos Electrónicos y Accesorios</title>
+    <link rel="stylesheet" href="cs/index.css">
+    <script src="js/index.js"></script>
+    <meta name="description" content="WAIT SHOP ofrece productos electrónicos, accesorios y artículos de tecnología a precios accesibles. Descubre nuestras ofertas.">
+</head>
+ <body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <div class="barra-superior">
+            <label for="menu-toggle" class="icono-menu">☰</label>
+            <div class="logo-sitio">
+                <img src="W.png" alt="Logo de WAIT">
+                WAIT
+            </div>
+            <nav class="menu-principal">
+                <a href="#productos" data-filtro="Electrónicos">Electrónicos</a>
+                <a href="#productos" data-filtro="Accesorios">Accesorios</a>
+                <a href="#productos" data-filtro="Gaming">Gaming</a>
+                <a href="#productos" data-filtro="OFICINA">OFICINA</a>
+            </nav>
+            <div class="acciones-header">
+                <a href="carrito.html">
+                    Carrito
+                    <span class="contador-carrito" id="contador">0</span>
+                </a>
+            </div>
+        </div>
+        <div class="menu-movil">
+            <a href="#productos" data-filtro="Electrónicos">Electrónicos</a>
+            <a href="#productos" data-filtro="Accesorios">Accesorios</a>
+            <a href="#productos" data-filtro="Gaming">Gaming</a>
+            <a href="#productos" data-filtro="OFICINA">OFICINA</a>
+        </div>
+    </header>
+
+    <section class="seccion-presentacion">
+        <div class="presentacion-contenido">
+            <div class="texto-presentacion">
+                <h1>WAIT STORE</h1>
+                <p>Productos electrónicos y accesorios a precios accesibles.</p>
+                <a href="#productos" class="boton-explorar">Ver productos</a>
+            </div>
+            <div class="logo-derecha">
+                <img src="W.png" alt="Logo de WAIT SHOP">
+            </div>
+        </div>
+    </section>
+
+    <main class="seccion-productos" id="productos">
+        <h2>Ofertas Destacadas</h2>
+        <div class="area-filtros">
+            <select class="select-tipo" id="filtro-categoria">
+                <option value="Todos">Todos los productos</option>
+                <option value="Electrónicos">Electrónicos</option>
+                <option value="Accesorios">Accesorios</option>
+                <option value="Gaming">Gaming</option>
+                <option value="OFICINA">OFICINA</option>
+            </select>
+        </div>
+        <div class="lista-productos">
+            <article class="tarjeta-producto" data-nombre="Mouse Logitech" data-precio="18" data-categoria="Accesorios" data-imagen="mouse.jpeg">
+                <img src="mouse.jpeg" class="imagen-producto" alt="Mouse Logitech">
+                <h3>Mouse Logitech</h3>
+                <p>Accesorios - Stock disponible</p>
+                <div class="precio-producto">18 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Teclado Mecánico RGB" data-precio="45" data-categoria="Accesorios" data-imagen="teclado.jpg">
+                <img src="teclado.jpg" class="imagen-producto" alt="Teclado Mecánico">
+                <h3>Teclado Mecánico RGB</h3>
+                <p>Accesorios - Stock disponible</p>
+                <div class="precio-producto">45 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Webcam HD 1080p" data-precio="35" data-categoria="Accesorios" data-imagen="webcam.jpg">
+                <img src="webcam.jpg" class="imagen-producto" alt="Webcam HD">
+                <h3>Webcam HD 1080p</h3>
+                <p>Accesorios - Stock disponible</p>
+                <div class="precio-producto">35 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Mousepad Gaming XXL" data-precio="12" data-categoria="Accesorios" data-imagen="mousepad.jpeg">
+                <img src="mousepad.jpeg" class="imagen-producto" alt="Mousepad Gaming">
+                <h3>Mousepad Gaming XXL</h3>
+                <p>Accesorios - Stock disponible</p>
+                <div class="precio-producto">12 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Auriculares USB" data-precio="25" data-categoria="Accesorios" data-imagen="auriculares.jpeg">
+                <img src="auriculares.jpeg" class="imagen-producto" alt="Auriculares USB">
+                <h3>Auriculares USB</h3>
+                <p>Accesorios - Stock disponible</p>
+                <div class="precio-producto">25 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+        
+            <article class="tarjeta-producto" data-nombre="CPU Ryzen 5" data-precio="40" data-categoria="Gaming" data-imagen="Producto 2.jpeg">
+                <img src="Producto 2.jpeg" class="imagen-producto" alt="CPU Ryzen 5">
+                <h3>CPU Ryzen 5</h3>
+                <p>Gaming - Stock disponible</p>
+                <div class="precio-producto">40 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Tarjeta Gráfica RTX 3060" data-precio="250" data-categoria="Gaming" data-imagen="gpu.jpeg">
+                <img src="gpu.jpeg" class="imagen-producto" alt="GPU RTX 3060">
+                <h3>Tarjeta Gráfica RTX 3060</h3>
+                <p>Gaming - Stock disponible</p>
+                <div class="precio-producto">250 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Monitor Gaming 144Hz" data-precio="180" data-categoria="Gaming" data-imagen="monitor.jpeg">
+                <img src="monitor.jpeg" class="imagen-producto" alt="Monitor Gaming">
+                <h3>Monitor Gaming 144Hz</h3>
+                <p>Gaming - Stock disponible</p>
+                <div class="precio-producto">180 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Silla Gamer " data-precio="120" data-categoria="Gaming" data-imagen="sillagamer.jpeg">
+                <img src="sillagamer.jpeg" class="imagen-producto" alt="Silla Gamer">
+                <h3>Silla Gamer Pro</h3>
+                <p>Gaming - Stock disponible</p>
+                <div class="precio-producto">120 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="RAM 16GB DDR4 RGB" data-precio="55" data-categoria="Gaming" data-imagen="ram.jpeg">
+                <img src="ram.jpeg" class="imagen-producto" alt="RAM 16GB">
+                <h3>RAM 16GB DDR4 RGB</h3>
+                <p>Gaming - Stock disponible</p>
+                <div class="precio-producto">55 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Laptop Dell i5" data-precio="350" data-categoria="Electrónicos" data-imagen="laptop.jpeg">
+                <img src="laptop.jpeg" class="imagen-producto" alt="Laptop Dell">
+                <h3>Laptop Dell i5</h3>
+                <p>Electrónicos - Stock disponible</p>
+                <div class="precio-producto">350 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Tablet Android 10 pulgadas" data-precio="95" data-categoria="Electrónicos" data-imagen="tablet.jpeg">
+                <img src="tablet.jpeg" class="imagen-producto" alt="Tablet Android">
+                <h3>Tablet Android 10"</h3>
+                <p>Electrónicos - Stock disponible</p>
+                <div class="precio-producto">95 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Impresora Multifunción" data-precio="75" data-categoria="Electrónicos" data-imagen="impresora.jpeg">
+                <img src="impresora.jpeg" class="imagen-producto" alt="Impresora">
+                <h3>Impresora Multifunción</h3>
+                <p>Electrónicos - Stock disponible</p>
+                <div class="precio-producto">75 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Disco Duro Externo 1TB" data-precio="42" data-categoria="Electrónicos" data-imagen="ssd.jpeg">
+                <img src="hhd.jpeg" class="imagen-producto" alt="Disco Duro">
+                <h3>Disco Duro Externo 1TB</h3>
+                <p>Electrónicos - Stock disponible</p>
+                <div class="precio-producto">42 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="SSD 512GB NVMe" data-precio="48" data-categoria="Electrónicos" data-imagen="ssd.jpeg">
+                <img src="ssd.jpeg" class="imagen-producto" alt="SSD NVMe">
+                <h3>SSD 512GB NVMe</h3>
+                <p>Electrónicos - Stock disponible</p>
+                <div class="precio-producto">48 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Silla de Escritorio" data-precio="250" data-categoria="OFICINA" data-imagen="Producto 4.jpg">
+                <img src="Producto 4.jpg" class="imagen-producto" alt="Silla de Escritorio">
+                <h3>Silla de Escritorio</h3>
+                <p>OFICINA - Stock disponible</p>
+                <div class="precio-producto">250 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Escritorio" data-precio="99" data-categoria="OFICINA" data-imagen="Producto 5.jpg">
+                <img src="Producto 5.jpg" class="imagen-producto" alt="Escritorio">
+                <h3>Escritorio</h3>
+                <p>OFICINA - Stock disponible</p>
+                <div class="precio-producto">99 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Lámpara LED Escritorio" data-precio="15" data-categoria="OFICINA" data-imagen="lampara.jpg">
+                <img src="lampara.jpg" class="imagen-producto" alt="Lámpara LED">
+                <h3>Lámpara LED Escritorio</h3>
+                <p>OFICINA - Stock disponible</p>
+                <div class="precio-producto">15 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Organizador de Cables" data-precio="8" data-categoria="OFICINA" data-imagen="organizador.jpeg">
+                <img src="organizador.jpeg" class="imagen-producto" alt="Organizador">
+                <h3>Organizador de Cables</h3>
+                <p>OFICINA - Stock disponible</p>
+                <div class="precio-producto">8 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Soporte para Monitor" data-precio="22" data-categoria="OFICINA" data-imagen="soporte.jpeg">
+                <img src="soporte.jpeg" class="imagen-producto" alt="Soporte Monitor">
+                <h3>Soporte para Monitor</h3>
+                <p>OFICINA - Stock disponible</p>
+                <div class="precio-producto">22 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="tarjeta-producto" data-nombre="Pizarra Blanca 60x90cm" data-precio="28" data-categoria="OFICINA" data-imagen="pizarra.jpeg">
+                <img src="pizarra.jpeg" class="imagen-producto" alt="Pizarra">
+                <h3>Pizarra Blanca 60x90cm</h3>
+                <p>OFICINA - Stock disponible</p>
+                <div class="precio-producto">28 BOB</div>
+                <button class="boton-agregar">Agregar al carrito</button>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="pie-contenido">
+            <div class="pie-bloque">
+                <h4>Redes Sociales</h4>
+                <div class="iconos-redes">
+                    <a href="#">f</a>
+                    <a href="#">in</a>
+                    <a href="#">yt</a>
+                    <a href="#">ig</a>
+                </div>
+            </div>
+            <div class="pie-bloque">
+                <h4>Conócenos</h4>
+                <a href="#">Acerca de nosotros</a><br>
+                <a href="#">Trabaja con nosotros</a>
+            </div>
+            <div class="pie-bloque">
+                <h4>Soporte</h4>
+                <a href="#">Ayuda</a><br>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

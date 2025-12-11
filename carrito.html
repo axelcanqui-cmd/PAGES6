@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrito de compras de QANATHI SHOP - Revisa tus productos seleccionados y completa tu compra">
+    <title>Carrito de Compras - WAIT SHOP</title>
+    <link rel="stylesheet" href="cs/carritoo.css">
+    <script src="carrito.js"></script>
+</head>
+ <header class="barra-principal">
+        <input type="checkbox" id="menu-toggle">
+        <div class="contenido-header">
+            <div class="logo-tienda">
+                <label for="menu-toggle" class="icono-menu">☰</label>
+                <img src="W.png" alt="Logo WAIT">
+                WAIT
+            </div>
+
+            <nav class="links-menu">
+                <a href="index.html">Electrónicos</a>
+                <a href="index.html">Accesorios</a>
+                <a href="index.html">Gaming</a>
+                <a href="index.html">OFICINA</a>
+            </nav>
+
+            <div class="acciones-header">
+                <a href="index.html">Inicio</a>
+            </div>
+        </div>
+        <div class="menu-movil">
+            <a href="index.html">Electrónicos</a>
+            <a href="index.html">Accesorios</a>
+            <a href="index.html">Gaming</a>
+            <a href="index.html">OFICINA</a>
+            <a href="index.html">Inicio</a>
+        </div>
+    </header>
+
+    <main class="caja-general">
+        <h1 class="titulo-principal">TU CARRITO</h1>
+
+        <div class="zona-carrito">
+            <section class="lista-productos" id="lista-carrito">
+            </section>
+
+            <aside class="caja-resumen">
+                <h3>RESUMEN DE COMPRA</h3>
+                <div class="fila-resumen">
+                    <span>Subtotal</span>
+                    <span id="subtotal">0 BOB</span>
+                </div>
+                <div class="fila-resumen">
+                    <span>Descuento</span>
+                    <span>-</span>
+                </div>
+                <div class="fila-resumen fila-total">
+                    <span>Total</span>
+                    <span id="total">0 BOB</span>
+                </div>
+                <a href="checkout.html">
+                    <button class="boton-pagar">PAGAR</button>
+                </a>
+            </aside>
+        </div>
+
+        <section class="caja-sugeridos">
+            <h2>Productos sugeridos</h2>
+            <div class="carrusel-contenedor">
+                <button class="flecha-carrusel flecha-izquierda" id="flecha-izq">‹</button>
+                <div class="grid-sugeridos" id="carrusel">
+                    <!-- Accesorios -->
+                    <article class="item-sugerido" data-nombre="Mouse Logitech" data-precio="18" data-categoria="Accesorios" data-imagen="mouse.jpeg">
+                        <img src="mouse.jpeg" alt="Mouse Logitech">
+                        <h4>Mouse Logitech</h4>
+                        <div class="precio-sugerido">18 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Teclado Mecánico RGB" data-precio="45" data-categoria="Accesorios" data-imagen="teclado.jpg">
+                        <img src="teclado.jpg" alt="Teclado Mecánico">
+                        <h4>Teclado Mecánico RGB</h4>
+                        <div class="precio-sugerido">45 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Webcam HD 1080p" data-precio="35" data-categoria="Accesorios" data-imagen="webcam.jpg">
+                        <img src="webcam.jpg" alt="Webcam HD">
+                        <h4>Webcam HD 1080p</h4>
+                        <div class="precio-sugerido">35 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Auriculares USB" data-precio="25" data-categoria="Accesorios" data-imagen="auriculares.jpeg">
+                        <img src="auriculares.jpeg" alt="Auriculares USB">
+                        <h4>Auriculares USB</h4>
+                        <div class="precio-sugerido">25 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <!-- Gaming -->
+                    <article class="item-sugerido" data-nombre="CPU Ryzen 5" data-precio="40" data-categoria="Gaming" data-imagen="Producto 2.jpeg">
+                        <img src="Producto 2.jpeg" alt="CPU Ryzen 5">
+                        <h4>CPU Ryzen 5</h4>
+                        <div class="precio-sugerido">40 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Tarjeta Gráfica RTX 3060" data-precio="250" data-categoria="Gaming" data-imagen="gpu.jpeg">
+                        <img src="gpu.jpeg" alt="GPU RTX 3060">
+                        <h4>Tarjeta Gráfica RTX 3060</h4>
+                        <div class="precio-sugerido">250 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Monitor Gaming 144Hz" data-precio="180" data-categoria="Gaming" data-imagen="monitor.jpeg">
+                        <img src="monitor.jpeg" alt="Monitor Gaming" srcset="">
+                        <h4>Monitor Gaming 144Hz</h4>
+                        <div class="precio-sugerido">180 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Silla Gamer Pro" data-precio="120" data-categoria="Gaming" data-imagen="sillagamer.jpeg">
+                        <img src="sillagamer.jpeg" alt="Silla Gamer">
+                        <h4>Silla Gamer Pro</h4>
+                        <div class="precio-sugerido">120 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <!-- Electrónicos -->
+                    <article class="item-sugerido" data-nombre="Laptop Dell i5" data-precio="350" data-categoria="Electrónicos" data-imagen="laptop.jpeg">
+                        <img src="laptop.jpeg" alt="Laptop Dell">
+                        <h4>Laptop Dell i5</h4>
+                        <div class="precio-sugerido">350 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Tablet Android 10 pulgadas" data-precio="95" data-categoria="Electrónicos" data-imagen="tablet.jpeg">
+                        <img src="tablet.jpeg" alt="Tablet Android">
+                        <h4>Tablet Android 10"</h4>
+                        <div class="precio-sugerido">95 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Impresora Multifunción" data-precio="75" data-categoria="Electrónicos" data-imagen="impresora.jpeg">
+                        <img src="impresora.jpeg" alt="Impresora">
+                        <h4>Impresora Multifunción</h4>
+                        <div class="precio-sugerido">75 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="SSD 512GB NVMe" data-precio="48" data-categoria="Electrónicos" data-imagen="ssd.jpeg">
+                        <img src="ssd.jpeg" alt="SSD NVMe">
+                        <h4>SSD 512GB NVMe</h4>
+                        <div class="precio-sugerido">48 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <!-- OFICINA -->
+                    <article class="item-sugerido" data-nombre="Silla de Escritorio" data-precio="10" data-categoria="OFICINA" data-imagen="Producto 4.jpg">
+                        <img src="Producto 4.jpg" alt="Silla de Escritorio">
+                        <h4>Silla de Escritorio</h4>
+                        <div class="precio-sugerido">10 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Escritorio" data-precio="99" data-categoria="OFICINA" data-imagen="Producto 5.jpg">
+                        <img src="Producto 5.jpg" alt="Escritorio">
+                        <h4>Escritorio</h4>
+                        <div class="precio-sugerido">99 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Lámpara LED Escritorio" data-precio="15" data-categoria="OFICINA" data-imagen="lampara.jpg">
+                        <img src="lampara.jpg" alt="Lámpara LED">
+                        <h4>Lámpara LED Escritorio</h4>
+                        <div class="precio-sugerido">15 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+
+                    <article class="item-sugerido" data-nombre="Soporte para Monitor" data-precio="22" data-categoria="OFICINA" data-imagen="soporte.jpeg">
+                        <img src="soporte.jpeg" alt="Soporte Monitor">
+                        <h4>Soporte para Monitor</h4>
+                        <div class="precio-sugerido">22 BOB</div>
+                        <button class="boton-agregar-sugerido">+</button>
+                    </article>
+                </div>
+                <button class="flecha-carrusel flecha-derecha" id="flecha-der">›</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenido-pie">
+            <div class="seccion-pie">
+                <h4>Redes Sociales</h4>
+                <div class="redes">
+                    <a href="#">f</a>
+                    <a href="#">in</a>
+                    <a href="#">yt</a>
+                    <a href="#">ig</a>
+                </div>
+            </div>
+
+            <div class="seccion-pie links-pie">
+                <h4>Conócenos</h4>
+                <ul>
+                    <li><a href="#">Acerca de nosotros</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="seccion-pie links-pie">
+                <h4>Gana dinero con nosotros</h4>
+                <ul>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Anunciar</a></li>
+                    <li><a href="#">Publicar</a></li>
+                </ul>
+            </div>
+
+            <div class="seccion-pie links-pie">
+                <h4>Productos de pago</h4>
+                <ul>
+                    <li><a href="#">Compra productos</a></li>
+                    <li><a href="#">Recarga tu saldo</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

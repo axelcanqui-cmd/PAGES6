@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+}
+
+.contenido-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.contenido {
+    display: flex;
+    gap: 30px;
+}
+
+.formulario {
+    flex: 2;
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+/* 🔹 RESUMEN COMPACTO */
+.resumen {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    height: fit-content;
+    font-size: 13px;
+}
+
+.resumen h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.producto-item {
+    display: grid;
+    grid-template-columns: 45px 1fr auto;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.producto-img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.producto-info h4 {
+    font-size: 13px;
+}
+
+.producto-info p {
+    font-size: 11px;
+    color: #666;
+}
+
+.producto-item span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #e74c3c;
+    align-self: center;
+}
+
+.totales {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.linea-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.linea-total.final {
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 1px solid #333;
+    padding-top: 8px;
+}
+
+/* 🔹 FORMULARIO */
+.seccion {
+    margin-bottom: 25px;
+}
+
+.seccion h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.dos-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.metodo-pago {
+    display: block;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.metodo-pago:hover {
+    background: #f9f9f9;
+}
+
+.metodo-pago input {
+    margin-right: 8px;
+}
+
+.boton-comprar {
+    width: 100%;
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.boton-comprar:hover {
+    background: #229954;
+}
+
+.boton-volver {
+    display: block;
+    text-align: center;
+    background: #95a5a6;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.boton-volver:hover {
+    background: #7f8c8d;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+    }
+
+    .dos-campos {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
